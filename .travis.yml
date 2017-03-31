@@ -8,3 +8,8 @@ matrix:
       sudo: required
       mono: none
       dotnet: 1.0.1
+
+script:
+  - dotnet restore
+  - dotnet build
+  - cd UnitTestProject1 && dotnet test -verbose && cd ../
