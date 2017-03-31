@@ -1,5 +1,10 @@
 language: csharp
 solution: ci-experiments-dotnetcore.solution
 
-mono: none
-dotnet: 1.0.1
+matrix:
+  include:
+    - os: linux
+      dist: trusty
+      sudo: required
+      mono: none
+      dotnet: 1.0.1
