@@ -12,12 +12,5 @@ namespace UnitTestProject1
             Assert.AreEqual(ClassLibrary1.Class1.ReturnFive(), 5);
             Assert.AreEqual(ClassLibrary1.Class1.ReturnSix(), 6);
         }
-
-        [TestMethod]
-        public void ShouldFail()
-        {
-            Assert.AreEqual(ClassLibrary1.Class1.ReturnFive(),
-                            ClassLibrary1.Class1.ReturnSix());
-        }
     }
 }
