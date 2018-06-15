@@ -1,0 +1,18 @@
+# EditorConfig is awesome: http://EditorConfig.org
+
+# Top-most EditorConfig file
+root = true
+
+[*]
+charset = utf-8
+indent_size = 4
+indent_style = space
+max_line_length = 120
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.{sln,csproj,vbproj,nuget.targets}]
+charset = utf-8-bom
+
+[*.yml]
+indent_size = 2
