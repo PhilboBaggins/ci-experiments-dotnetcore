@@ -6,7 +6,7 @@ set -o errexit # (set -e) Exit if any statement returns non-true value
 BUILD_CONFIGURATION="Release"
 APPLICATIONS="ConsoleApp1 OpenTkApp"
 FRAMEWORK="netcoreapp2.0"
-RUNTIMES="win7-x64 osx.10.11-x64 ubuntu.16.04-x64"
+RUNTIMES="win-x64 linux-x64 osx-x64"
 
 # Change to directory script resides in
 cd "`dirname -- "${0}"`"
