@@ -8,4 +8,4 @@ build_script:
   - dotnet build
 
 test_script:
-  - cd UnitTestProject1 && dotnet test && cd ../
+  - dotnet test UnitTestProject1

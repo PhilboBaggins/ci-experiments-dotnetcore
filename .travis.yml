@@ -16,4 +16,4 @@ matrix:
 script:
   - dotnet restore
   - dotnet build
-  - cd UnitTestProject1 && dotnet test && cd ../
+  - dotnet test UnitTestProject1
