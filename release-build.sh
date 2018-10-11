@@ -5,7 +5,7 @@ set -o errexit # (set -e) Exit if any statement returns non-true value
 
 BUILD_CONFIGURATION="Release"
 APPLICATIONS="ConsoleApp1 OpenTkApp"
-FRAMEWORK="netcoreapp2.0"
+FRAMEWORK="netcoreapp2.1"
 RUNTIMES="win-x64 linux-x64 osx-x64"
 
 # Change to directory script resides in
