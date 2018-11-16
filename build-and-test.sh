@@ -1,5 +1,5 @@
 #!/bin/sh
 
-dotnet restore
-dotnet build
+dotnet build --verbosity=quiet
+
 dotnet test UnitTestProject1
