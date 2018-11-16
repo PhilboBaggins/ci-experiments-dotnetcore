@@ -4,7 +4,7 @@ set -o nounset # (set -u) No unset variables
 set -o errexit # (set -e) Exit if any statement returns non-true value
 
 BUILD_CONFIGURATION="Release"
-APPLICATIONS="ConsoleApp1 OpenTkApp"
+APPLICATIONS="ConsoleApp1 OpenTkApp GtkApp"
 FRAMEWORK="netcoreapp2.1"
 RUNTIMES="win-x64 linux-x64 osx-x64"
 
