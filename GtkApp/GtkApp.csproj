@@ -16,4 +16,8 @@
     <PackageReference Include="GtkSharp" Version="3.22.24.*" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj" />
+  </ItemGroup>
+
 </Project>
