@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTkApp", "OpenTkApp\Open
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GtkApp", "GtkApp\GtkApp.csproj", "{B0BAD1B0-0FF2-4FF4-8319-76A31E75C05F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2_TlsTest", "ConsoleApp2_TlsTest\ConsoleApp2_TlsTest.csproj", "{7F72974C-3611-4E23-8925-C28E89D2DF10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{B0BAD1B0-0FF2-4FF4-8319-76A31E75C05F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0BAD1B0-0FF2-4FF4-8319-76A31E75C05F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0BAD1B0-0FF2-4FF4-8319-76A31E75C05F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F72974C-3611-4E23-8925-C28E89D2DF10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F72974C-3611-4E23-8925-C28E89D2DF10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F72974C-3611-4E23-8925-C28E89D2DF10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F72974C-3611-4E23-8925-C28E89D2DF10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
