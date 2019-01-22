@@ -9,7 +9,7 @@ FRAMEWORK="netcoreapp2.1"
 RUNTIMES="win-x64 linux-x64 osx-x64"
 
 # Change to directory script resides in
-cd "`dirname -- "${0}"`"
+cd "$(dirname -- "${0}")"
 
 # Restore dependencies and tools of all projects
 dotnet restore
