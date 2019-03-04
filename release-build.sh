@@ -14,22 +14,20 @@ cd "$(dirname -- "${0}")"
 # Restore dependencies and tools of all projects
 dotnet restore
 
-# Build and publish all projects for each runtime target
-for runtime in $RUNTIMES; do
-    dotnet publish -c $BUILD_CONFIGURATION --framework $FRAMEWORK --runtime $runtime
-done
-
 # Grab version string from Git
 VERSION="$(git describe --tags --dirty)"
 
 # Remove the string "version-" from the beginning of the $VERSION variable
 VERSION=${VERSION#"version-"}
 
-# Create compressed tar archives of published files
-# TODO: Create a zip for the Windows release
-# TODO: Create a Package Bundle for the MacOS release
+# For each application ...
 for application in $APPLICATIONS; do
+    # ... and each runtime ...
     for runtime in $RUNTIMES; do
+        # ... build and publish the application ...
+        dotnet publish -c "$BUILD_CONFIGURATION" --framework "$FRAMEWORK" --runtime "$runtime" "$application"
+    
+        # ... then create a compressed tar archives of the published files
         binDir="$application/bin/$BUILD_CONFIGURATION/$FRAMEWORK/$runtime"
         publishDir="${application}_${VERSION}_${runtime}"
         tarball="${publishDir}.tgz"
